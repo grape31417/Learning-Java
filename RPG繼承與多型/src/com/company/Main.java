@@ -17,7 +17,7 @@ public class Main {
     /*Role role =new Role();
     role.setName("Mike");
     role.setBlood(50);
-    role.setLevel(1);*///Role已設為抽象方法 無法創造物件
+    role.setLevel(1);*///Role已設為抽象類別 無法創造物件
 
     showBlood(swordman);
     showBlood(magican);
@@ -25,9 +25,11 @@ public class Main {
     System.out.printf("%s",swordman.toString());//建立toStream簡化
     System.out.printf("%s",magican.toString());
 
+    Role role = new Swordman();
+        role.getBlood();
+
     drawFight(swordman);
     drawFight(magican);
-
 
     }
     static void showBlood(Role role)//多型寫法 使用Role類別操控Swordman和Magican子類別(一種類別 操控多種類別)

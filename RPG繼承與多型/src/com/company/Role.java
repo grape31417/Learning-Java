@@ -5,7 +5,6 @@ public abstract class Role {
     private int level;
     private int blood;
 
-
     public int getBlood() {
         return blood;
     }
@@ -32,9 +31,9 @@ public abstract class Role {
 
     public abstract void fight();//重新定義 寫法 因為子類別實作方法不一樣
 
-    public String toString () {
+   /* public String toString () {
         return String.format(":%s 等級:%d 血量:%d %n", this.getName(), this.getLevel(), this.getBlood());
-    }
+    }*/
 
 
 }

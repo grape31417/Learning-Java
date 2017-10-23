@@ -7,6 +7,7 @@ public class  Swordman extends Role {
 
     @Override//重新定義
     public String toString () {
+
         return "劍士"+super.toString();
     }
 
